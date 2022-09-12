@@ -1,8 +1,8 @@
 # 소개
 
 안녕하세요. 김찬미 입니다.
-자기소개, 인사 [https://이력서페이지주소.pl/](https://이력서페이지주소.pl/).
-예시) [https://naver.com/](https://naver.com/).
+자기소개, 인사
+https://chan0617.github.io/portfolio/
 
 ## 설명
 
