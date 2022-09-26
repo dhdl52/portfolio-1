@@ -37,7 +37,7 @@ nav {
 nav h1 {
     width: 75px;
     height: 75px;
-    background: url(../img/ms-icon-70x70.png) no-repeat left center / contain;
+    background: url('../logo.svg') no-repeat left center / contain;
     position: fixed;
     margin: -10px 0;
 }

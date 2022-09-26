@@ -1,78 +1,24 @@
-<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg" >
-
-<!-- dasharray 선의길이
-    dashoffset 선의간격
- -->
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432.27 437.78">
  <style>
-.cls-1,
-.cls-2 {
-    fill: none;
-    stroke: #274b9b;
-    stroke-width: 35px;
-}
 
-.cls-1 {
-    stroke-dashoffset: 620;
-    stroke-dasharray: -620;
-    animation: line 1s linear 0s forwards;
-    stroke-miterlimit: 10;
-}
-
-.cls-2 {
-    stroke-dashoffset: 460;
-    stroke-dasharray: -460;
-    animation: line2 1s linear 1s forwards;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.cls-3 {
-    fill: #274b9b;
-    stroke-dashoffset: 10;
-    stroke-dasharray: -10;
-    animation: line3 1s linear 2s forwards;
-}
-
-@keyframes line {
-    from {
-        stroke-dashoffset: -620;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes line2 {
-    from {
-        stroke-dashoffset: 460;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes line3 {
-    from {
-        stroke-dashoffset: 10;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
+    .st0 {
+            stroke-dashoffset:1360;
+            stroke-dasharray:1200;
+            animation: line 4s infinite;
+        }
+        @keyframes line {
+            to{stroke-dashoffset:0;}
+        }
+    .st1{     
+            fill:#274b9b;
+            animation: cl 4s 4s infinite;
+            }
+        @keyframes cl {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        
+        }
 </style>
-
-
-<path id="_4" data-name="4" class="cls-1" d="M447.38,74.64a443.19,443.19,0,0,1,53-3.16C743.72,71.48,941,268.77,941,512.14S743.72,952.8,500.35,952.8,59.69,755.51,59.69,512.14A439.28,439.28,0,0,1,92,346.32"/>
-<path id="_2" data-name="2" class="cls-2" d="M82.76,653.21s52.88-95.75,223.76-149.51c0,0-93.24-57.69-165.76-111.36,0,0-103-73.38-113.92-134.93,0,0-6.4-40.43,120.32-34.67,0,0,174.78-9,397.47,125.44,0,0,215,130.56,222.69,230.4,0,0,10.49,79-64.66,110-10.52,4.33-50.91,9.64-62.23,10.69-24.7,2.28-47.15,4.92-51.45,36.8a35.45,35.45,0,0,0,.16,4.36c0,9,7.85,58,172.9,124.74"/>
-<circle id="_5" data-name="5" class="cls-3" cx="602.14" cy="527.01" r="30.76"/>
-<path id="_3" data-name="3" class="cls-1" d="M167.89,220.71A441.52,441.52,0,0,1,347.4,96.55"/>
-<path id="_1" data-name="1" class="cls-2" d="M401.59,274.72S356.1,159.81,345.41,84.18c-3.18-22.57-3.27-41.64,1.88-53.12,0,0,9.6-21.36,58.88,11.72,0,0,168.39,112.92,196,341.81"/></svg>
-<!-- 선길이 알려줌 -->
-<!-- <script>console.log(document.querySelector('.st0').getTotalLength());</script> -->
-
-
+<path id="st0" class="st0" d="M106,128.45a201.16,201.16,0,0,1,81.75-56.54M71.39,184.65A200,200,0,0,0,56.7,259.23c-.5,108.26,85.89,198,194.1,201.51,129,4.11,231.75-113.52,202.1-246.69C437.42,144.51,366.71,76.53,296.72,63.24a207.29,207.29,0,0,0-63.48-2.31m143.3,360c-78.25-33.23-78.69-57.49-78.69-57.49-4.37-17.71,41.31-19.67,41.31-19.67,45.47-10.5,39.78-53.34,39.78-53.34C375.45,245,277.53,185.5,277.53,185.5c-101.41-61.21-181-57.13-181-57.13-57.71-2.62-54.79,15.79-54.79,15.79,4.95,28,51.87,61.45,51.87,61.45,19,14.06,41.13,28.73,56.5,38.65a11,11,0,0,1-1.9,19.44C86.68,287.94,66,320,66,320M303.72,203.08C291.16,98.85,214.48,47.43,214.48,47.43c-22.45-15.07-26.82-5.34-26.82-5.34-2.34,5.23-2.3,13.91-.85,24.19,4.86,34.44,25.58,86.77,25.58,86.77" transform="translate(-33.74 -31.03)" style="fill:none;stroke:#254b9f;stroke-miterlimit:10;stroke-width:15.938731580972672px" />
+<circle class="st1" cx="264.27" cy="239.3" r="14.94" />
 </svg>
