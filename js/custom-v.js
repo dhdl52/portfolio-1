@@ -158,3 +158,15 @@ const scrollOn = (sct) => {
 // for (const sct of arr){
 //     console.log(sct); // 10, 20, 30 출력
 // }
+
+//button
+
+document
+  .querySelectorAll(".button")
+  .forEach(
+    (button) =>
+      (button.innerHTML =
+        "<div><span>" +
+        button.textContent.trim().split("").join("</span><span>") +
+        "</span></div>")
+  );

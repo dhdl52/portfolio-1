@@ -20,13 +20,16 @@ font-family: 'Song Myung', serif; */
 	box-sizing: border-box;
 	-webkit-text-size-adjust: none;
 	-webkit-font-smoothing: antialiased;
-	font-family: 'Montserrat', sans-serif;
 }
 
 html {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* anchor */
@@ -261,15 +264,6 @@ table {
 	background: #f2f2f2;
 }
 
-
-/*16px*/
-
-body {
-	font-family: 'Red Hat Text', sans-serif;
-	font-weight: 400;
-	line-height: 28px;
-	color: #484646;
-}
 
 p {
 	margin-bottom: 1rem;
