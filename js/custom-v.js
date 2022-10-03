@@ -92,7 +92,7 @@ const scrollOn = (sct) => {
   if (sct >= sections[7].offsetTop - 500) {
     gnbOff();
     navOff();
-    document.querySelector(".gnb li:nth-child(8)").classList.add("on");
+    document.querySelector(".gnb li:nth-child(3)").classList.add("on");
     document.querySelector(".sideNav li:nth-child(8)").classList.add("on");
   }
   if (sct >= sections[8].offsetTop - 500) {
@@ -100,6 +100,12 @@ const scrollOn = (sct) => {
     navOff();
     document.querySelector(".gnb li:nth-child(9)").classList.add("on");
     document.querySelector(".sideNav li:nth-child(9)").classList.add("on");
+  }
+  if (sct >= sections[9].offsetTop - 500) {
+    gnbOff();
+    navOff();
+    document.querySelector(".gnb li:nth-child(10)").classList.add("on");
+    document.querySelector(".sideNav li:nth-child(10)").classList.add("on");
   }
 };
 
