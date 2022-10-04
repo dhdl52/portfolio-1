@@ -19,7 +19,7 @@ body::-webkit-scrollbar-thumb {
 
 #header.sticky {
     box-shadow: 0 -2px 10px rgb(0 0 0 / 20%);
-    background-color: rgba(255, 255, 255, 0.95);
+    background: rgba(203, 227, 255);
     transition: all 0.5s;
     position: fixed;
     z-index: 222;
@@ -210,7 +210,8 @@ section {
     background: #F4F9FF;
     border: 2px solid #719CDD;
     border-radius: 26px;
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     font-weight: 400;
     font-size: 14px;
     line-height: 36px;
@@ -324,7 +325,8 @@ section {
 }
 
 #home p {
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -546,7 +548,7 @@ section {
 .main-down img {
     position: absolute;
     top: 91%;    
-    left: 48%;
+    left: 50%;
     z-index: 13;
     width: 75px;
 }
@@ -575,7 +577,8 @@ section {
 }
 
 .list li {
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     font-size: 1.4em;
     color: #555A64;
     line-height: 2.6;
@@ -593,6 +596,7 @@ section {
     display: flex;
     align-items: center;
     white-space: nowrap;
+    line-height: 1.6;
 }
 
 .media span {
@@ -607,7 +611,8 @@ section {
 }
 
 .media p {
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     margin-bottom: 0;
     padding-left: 15px;
     font-size: 1.4em;
@@ -734,7 +739,8 @@ section {
 .detail-box a {
     color: #719CDD;
     font-size: 1.4em;
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     transition: all .5s;
     transform: scaleY(0);
 
@@ -768,7 +774,8 @@ section {
 .title-box span {
     color: #122E57;
     font-size: 1.3em;
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -809,7 +816,8 @@ section {
 .explain-box p,
 .explain-box li:nth-child(2),
 .explain-box li:nth-child(3) {
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     font-style: normal;
     font-weight: 400;
     font-size: 1.5em;
@@ -896,7 +904,7 @@ section {
 }
 
 .pj-text{
-    transform: rotate(338deg);
+    transform: rotate(348deg);
     margin-left: 50px;
     margin-top: -46px;
 }
@@ -904,7 +912,8 @@ section {
 
 .pj-text span{
     font-size: 1.4em;
-    font-family: 'Gmarket Sans';
+  font-family: 'GmarketSansMedium';
+
     letter-spacing: 1.2px;
 }
 
