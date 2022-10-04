@@ -18,8 +18,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header.sticky {
-    box-shadow: 0 -2px 10px rgb(0 0 0 / 20%);
-    background: rgba(203, 227, 255);
+    box-shadow: 0px 3px 8px rgb(30 52 125 / 20%);
+    background: rgba(244, 249, 255, .8);
+    backdrop-filter: blur(6.4px);
     transition: all 0.5s;
     position: fixed;
     z-index: 222;
@@ -69,10 +70,12 @@ nav .gnb li a {
     text-align: center;
     line-height: 2rem;
     height: 2rem;
-    font-size: 1.8em;
+    font-size: 1.7em;
     position: relative;
     width: 120px;
     height: 40px;
+    font-weight: 600;
+    font-family: 'GmarketSansLight';
 }
 
 nav .gnb li a:hover {
@@ -210,7 +213,7 @@ section {
     background: #F4F9FF;
     border: 2px solid #719CDD;
     border-radius: 26px;
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     font-weight: 400;
     font-size: 14px;
@@ -325,13 +328,16 @@ section {
 }
 
 #home p {
-  font-family: 'GmarketSansMedium';
-
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 50px;
     color: #090A0C;
+}
+
+.typed-cursor {
+    opacity: 0;
 }
 
 #home h2 em {
@@ -348,19 +354,27 @@ section {
     transform: scalex(0);
     transition: all 0.5s;
     border-radius: 2px;
-}
-
-
-
-#home h2 em::after {
     bottom: -8px;
     transform-origin: center;
+    animation: line 1.5s ease-in-out infinite alternate;
 }
 
-#home em:after,
+
+@keyframes line {
+    from {
+        transform: scalex(0);
+    }
+
+    to {
+        transform: scalex(1);
+    }
+
+}
+
+/* #home em:after,
 #home em:hover:after {
     transform: scaleX(1);
-}
+} */
 
 
 
@@ -547,7 +561,7 @@ section {
 
 .main-down img {
     position: absolute;
-    top: 91%;    
+    top: 91%;
     left: 50%;
     z-index: 13;
     width: 75px;
@@ -611,7 +625,7 @@ section {
 }
 
 .media p {
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     margin-bottom: 0;
     padding-left: 15px;
@@ -739,7 +753,7 @@ section {
 .detail-box a {
     color: #719CDD;
     font-size: 1.4em;
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     transition: all .5s;
     transform: scaleY(0);
@@ -774,7 +788,7 @@ section {
 .title-box span {
     color: #122E57;
     font-size: 1.3em;
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -816,7 +830,7 @@ section {
 .explain-box p,
 .explain-box li:nth-child(2),
 .explain-box li:nth-child(3) {
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     font-style: normal;
     font-weight: 400;
@@ -886,7 +900,7 @@ section {
 /* project6 */
 .pj-frame img {
     position: absolute;
-    transform: translate(-100%);    
+    transform: translate(-100%);
     transition-property: top;
     transition-duration: 5s;
     top: -120px;
@@ -899,20 +913,20 @@ section {
     background: url(../img/projects6.png) no-repeat;
     width: 839px;
     height: 785px;
-    transform: translate(-110%);    
+    transform: translate(-110%);
     top: 7230px;
 }
 
-.pj-text{
+.pj-text {
     transform: rotate(348deg);
     margin-left: 50px;
     margin-top: -46px;
 }
 
 
-.pj-text span{
+.pj-text span {
     font-size: 1.4em;
-  font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansMedium';
 
     letter-spacing: 1.2px;
 }
