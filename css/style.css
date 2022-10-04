@@ -139,14 +139,13 @@ section {
 /* sideNav */
 .sideNav {
     position: fixed;
-    top: 40%;
-    right: 50px;
+    transform: translate(4500%, 70%);
     z-index: 13;
 }
 
-.sideNav li {
+/* .sideNav li {
     position: relative;
-}
+} */
 
 .sideNav li a {
     display: block;
