@@ -41,11 +41,19 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
 
 
 </head>
 
 <body>
+  <div id="skip">
+    <ul>
+      <li><a href="#about">메인바로가기</a></li>
+      <li><a href="#project1">프로젝트로 바로가기</a></li>
+      <li><a href="#contact">연락 바로가기</a></li>
+    </ul>
+  </div>
   <div id="wrap">
     <header id="header">
       <div class="container">
@@ -113,8 +121,14 @@
           <div class="about-info fl">
             <h3>
               안녕하세요<br>
-              <em>꾸준함</em>과 <em>성실함</em>이 무기인 김찬미 입니다.
+              큰 귀로
+              <span class="line"><em>경</em></span>
+              <span class="line"><em>청</em></span>하고, 토끼처럼
+              <span class="line"><em>도</em></span>
+              <span class="line"><em>약</em></span>하는
+              김찬미 입니다
             </h3>
+
             <div class="about-box fl">
               <div class="introduce">
                 <h4>INTRODUCE</h4>
@@ -179,10 +193,10 @@
                 <div class="progress-bar">
                   <h3>SCSS</h3>
                   <div class="bar"></div>
-                  <div class="rate" data-rate="90"></div>
+                  <div class="rate" data-rate="80"></div>
                 </div>
                 <div class="progress-bar">
-                  <h3>JAVASCRIPT</h3>
+                  <h3>JavaScript</h3>
                   <div class="bar"></div>
                   <div class="rate" data-rate="86"></div>
                 </div>
@@ -206,12 +220,12 @@
                 <div class="progress-bar">
                   <h3>Figma</h3>
                   <div class="bar"></div>
-                  <div class="rate" data-rate="75"></div>
+                  <div class="rate" data-rate="85"></div>
                 </div>
                 <div class="progress-bar">
                   <h3>React</h3>
                   <div class="bar"></div>
-                  <div class="rate" data-rate="80"></div>
+                  <div class="rate" data-rate="70"></div>
                 </div>
               </div>
             </div>
@@ -219,16 +233,16 @@
         </section>
         <section class="section cf" id="project1">
           <h2 class="project-title">PROJECTS</h2>
-          <div class="frame fl">
+          <div class="frame p1_left fl">
             <img src="img/projectsMockup.png" alt="browser">
-            <a href="https://chan0617.github.io/project1/" class="hidden"><img src="img/project1.jpg"
+            <a href="https://chan0617.github.io/project1/" target="_blank" class="hidden"><img src="img/project1.jpg"
                 alt="project1"></a>
             <div class="detail-box">
-              <a href="https://chan0617.github.io/project1/">페이지 보기</a>
+              <a href="https://chan0617.github.io/project1/" target="_blank">페이지 보기</a>
               <a href="https://chan0617.github.io/project1/board.html" target="_blank">+서브페이지 보기</a>
             </div>
           </div><!-- //frame -->
-          <div class="infos fr">
+          <div class="infos p1_right fr">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">국립무형유산원<em>01</em></h3>
@@ -243,15 +257,16 @@
                 <li><span class="bold">사용 프로그램:</span>HTML / CSS / JavaScript / jQuery</li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
-                <button class="button" onclick="window.open('https://github.com/chan0617/project1');">GIT 보기</button>
+                <button class="button" onclick="window.open('pdf/project1-report.pdf');">기획서 보기</button>
+                <button class="button" onclick="window.open('https://chan0617.github.io/project1/');"> GIT 보기</button>
               </div>
+              <div class="rotate"><img src="img/projects_bg_03.png" alt="배경동그라미"></div>
             </div>
           </div>
           <!--//.infos-->
         </section>
         <section class="section cf" id="project2">
-          <div class="infos fl">
+          <div class="infos p2_left fl">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">한스케이크<em>02</em></h3>
@@ -268,19 +283,20 @@
                 <li><span class="bold">사용 프로그램:</span>HTML / CSS / JavaScript / jQuery</li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
+                <button class="button" onclick="window.open('pdf/project2-report.pdf');">기획서 보기</button>
                 <button class="button" onclick="window.open('https://github.com/chan0617/project1');">GIT 보기</button>
               </div>
+              <div class="rotate"><img src="img/projects3_bg_04.png" alt="배경동그라미"></div>
             </div>
           </div>
           <!--//.infos-->
-          <div class="frame fr">
+          <div class="frame p2_right fr">
             <img src="img/projectsMockup.png" alt="browser">
-            <a href="https://chan0617.github.io/project2/" class="hidden"><img src="img/project2.jpg"
-                alt="project1"></a>
+            <a href="https://chan0617.github.io/project2/" target="_blank" class="hidden"><img src="img/project2.jpg"
+                alt="project2"></a>
 
             <div class="detail-box">
-              <a href="https://chan0617.github.io/project1/">페이지 보기</a>
+              <a href="https://chan0617.github.io/project1/" target="_blank">페이지 보기</a>
               <div class="left">
                 <a href="https://chan0617.github.io/project2/blog.html" target="_blank">+서브페이지 보기 ① </a>
                 <a href="https://chan0617.github.io/project2/story.html" target="_blank">②</a>
@@ -289,15 +305,15 @@
           </div><!-- //frame -->
         </section>
         <section class="section cf" id="project3">
-          <div class="frame fl">
+          <div class="frame p3_left fl">
             <img src="img/projectsMockup.png" alt="browser">
-            <a href="https://chan0617.github.io/project3/" class="hidden"><img src="img/project3.png"
-                alt="project1"></a>
+            <a href="https://chan0617.github.io/project3/" target="_blank" class="hidden"><img src="img/project3.png"
+                alt="project3"></a>
             <div class="detail-box">
-              <a href="https://chan0617.github.io/project3/">페이지 보기</a>
+              <a href="https://chan0617.github.io/project3/" target="_blank">페이지 보기</a>
             </div>
           </div><!-- //frame -->
-          <div class="infos fr">
+          <div class="infos p3_right fr">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">민니홈페이지<em>03</em></h3>
@@ -317,15 +333,16 @@
                 <li><span class="bold">사용 프로그램:</span>HTML / SCSS / JavaScript / jQuery</li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
+                <button class="button" onclick="window.open('https://chan0617.github.io/project3/');">사이트 보기</button>
                 <button class="button" onclick="window.open('https://github.com/chan0617/project1');">GIT 보기</button>
               </div>
+              <div class="rotate"><img src="img/projects5_bg_01.png" alt="배경동그라미"></div>
             </div>
           </div>
           <!--//.infos-->
         </section>
         <section class="section cf" id="project4">
-          <div class="infos fl">
+          <div class="infos p4_left fl">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">당근마켓<em>04</em></h3>
@@ -343,52 +360,53 @@
                 <li><span class="bold">사용 프로그램:</span>HTML / CSS </li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
-                <button class="button" onclick="window.open('');">GIT 보기</button>
+                <button class="button" onclick="window.open('https://chan0617.github.io/project4/');">사이트 보기</button>
+                <button class="button" onclick="window.open('https://github.com/chan0617/project4');">GIT 보기</button>
               </div>
+              <div class="rotate"><img src="img/projects_bg_03.png" alt="배경동그라미"></div>
             </div>
           </div>
           <!--//.infos-->
-          <div class="frame fr">
+          <div class="frame p4_right fr">
             <img src="img/projectsMockup.png" alt="browser">
-            <a href="https://chan0617.github.io/project2/" class="hidden"><img src="img/project4.png"
+            <a href="https://chan0617.github.io/project4/" target="_blank" class="hidden"><img src="img/project4.png"
                 alt="project4"></a>
 
             <div class="detail-box">
-              <a href="https://chan0617.github.io/project1/">페이지 보기</a>
+              <a href="https://chan0617.github.io/project4/" target="_blank">페이지 보기</a>
             </div>
           </div><!-- //frame -->
         </section>
         <section class="section cf" id="project5">
-          <div class="frame fl">
+          <div class="frame p5_left fl">
             <img src="img/projectsMockup.png" alt="browser">
-            <a href="https://chan0617.github.io/project3/" class="hidden"><img src="." alt="project5"></a>
+            <a href="https://chan0617.github.io/project5/" target="_blank" class="hidden"><img src="img/project5.png"
+                alt="project5"></a>
             <div class="detail-box">
-              <a href="https://chan0617.github.io/project3/">페이지 보기</a>
+              <a href="https://project5-three.vercel.app/" target="_blank">페이지 보기</a>
             </div>
           </div><!-- //frame -->
-          <div class="infos fr">
+          <div class="infos p5_right fr">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">리액트<em>05</em></h3>
-                <span>#반응형 #리액트</span>
+                <span>#리액트</span>
               </div>
               <ul class="explain-box">
                 <li>
-                  <p>처음 SCSS를 사용하여 작업한 웹사이트입니다.
-                    기존 CSS보다 작성하기 편리하여 효율적으로 관리할 수 있는 점이 장점이라 생각됩니다.
-                    또한 평소에 좋아하는 아티스트의 페이지를
-                    디자인하고 가상으로 작업하여 재밌게 진행했던 프로젝트 입니다.
-                    <em>웹
-                      접근성</em>과 <em>웹표준</em>을 준수하여 완성하였습니다.
+                  <p>처음으로 React를 사용한 웹사이트입니다.
+                    노드js로 서버를 구축하였으며,
+                    상품생성,조회API 구현하였습니다.
+                    Heroku를 사용하여 서버를 배포하고, vercel로는 클라이언트를 배포하였습니다.
+                    클라이언트와 백서버를 연결하는 작업까지 하였습니다.
                   </p>
                 </li>
                 <li><span class="bold">제작기간:</span>3주</li>
-                <li><span class="bold">사용 프로그램:</span>HTML / SCSS / JavaScript / jQuery</li>
+                <li><span class="bold">사용 프로그램:</span>HTML / CSS / React</li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
-                <button class="button" onclick="window.open('https://github.com/chan0617/project1');">GIT 보기</button>
+                <button class="button" onclick="window.open('https://project5-three.vercel.app/');">사이트 보기</button>
+                <button class="button" onclick="window.open('https://github.com/chan0617/-project5');">GIT 보기</button>
               </div>
             </div>
           </div>
@@ -396,20 +414,23 @@
 
         </section>
         <section class="section cf" id="project6">
-          <div class="pj-frame fl">
+          <div class="pj-frame p6_left fl">
             <!-- <img src="img/projectsMockup_02.png" alt="phone"> -->
-            <a href="https://chan0617.github.io/project3/" class="hidden"><img src="." alt="project6"></a>
+            <a href="https://chan0617.github.io/project3/" target="_blank" class="hidden"><img src="."
+                alt="project6"></a>
             <div class="pj-text">
               <span>공공공 앱을 <br>직접 움직여보세요!</span>
             </div>
             <div class="mockup">
               <div class="crop">
-                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FE6IywQTrTjvWZlJNmX1H6X%2F%25EC%25A1%25B0%25EB%25B3%2584%25EA%25B3%25BC%25EC%25A0%259C(3%25EC%25A1%25B0)_%25EC%25A0%2595%25EB%25B3%25B4%25EA%25B5%25AC%25EC%25A1%25B0%25EB%258F%2584%3Fnode-id%3D117%253A3350%26scaling%3Dmin-zoom%26page-id%3D117%253A3257%26starting-point-node-id%3D117%253A3350" allowfullscreen></iframe>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FE6IywQTrTjvWZlJNmX1H6X%2F%25EC%25A1%25B0%25EB%25B3%2584%25EA%25B3%25BC%25EC%25A0%259C(3%25EC%25A1%25B0)_%25EC%25A0%2595%25EB%25B3%25B4%25EA%25B5%25AC%25EC%25A1%25B0%25EB%258F%2584%3Fnode-id%3D117%253A3350%26scaling%3Dmin-zoom%26page-id%3D117%253A3257%26starting-point-node-id%3D117%253A3350"
+                  allowfullscreen></iframe>
               </div>
-          </div>
-          
+            </div>
+
           </div><!-- //frame -->
-          <div class="infos fr">
+          <div class="infos p6_right fr">
             <div class="infos-box">
               <div class="title-box">
                 <h3 class="infos-name">공공공<em>06</em></h3>
@@ -426,8 +447,10 @@
                 <li><span class="bold">사용 프로그램:</span>FIGMA</li>
               </ul>
               <div class="btn-box">
-                <button class="button" onclick="window.open('');">기획서 보기</button>
-                <button class="button" onclick="window.open('');">프로토타입 보기</button>
+                <button class="button" onclick="window.open('pdf/project6-report.pdf');">기획서 보기</button>
+                <button class="button"
+                  onclick="window.open('https://www.figma.com/proto/E6IywQTrTjvWZlJNmX1H6X/%EC%A1%B0%EB%B3%84%EA%B3%BC%EC%A0%9C(3%EC%A1%B0)_%EC%A0%95%EB%B3%B4%EA%B5%AC%EC%A1%B0%EB%8F%84?node-id=117%3A3350&scaling=min-zoom&page-id=117%3A3257&starting-point-node-id=117%3A3350');">프로토타입
+                  보기</button>
               </div>
             </div>
           </div>
@@ -436,25 +459,520 @@
         </section>
         <section class="section" id="portfolio">
           <h2>DESIGN</h2>
+          <h4>본인 기여도: 100%</h4>
+          <div class="tab_wrapper">
+            <ul class="tab_menu">
+              <li><a href="#logo" class="active"><span>LOGO DESIGN</span></a></li>
+              <li><a href="#merchDesign"><span>MERCH DESIGN</span></a></li>
+              <li><a href="#emoticon"><span>EMOTION DESIGN</span></a></li>
+              <li><a href="#nft"><span>NFT DESIGN</span></a></li>
+              <li><a href="#game"><span>GAME DESIGN</span></a></li>
+              <li><a href="#accessories"><span>ACCESSORIES DESIGN</span></a></li>
+            </ul>
+            <div id="tab_content">
+              <div id="logo" class="active">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD.jpg" alt="로고디자인1"></div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_01.jpg" alt="로고디자인2">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_02.jpg" alt="로고디자인3">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_03.jpg" alt="로고디자인4">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_04.jpg" alt="로고디자인5">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_05.jpg" alt="로고디자인5">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_06.jpg" alt="로고디자인5">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/logoD_07.jpg" alt="로고디자인5">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">로고디자인 응모작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                </ul>
+              </div><!-- //logo -->
+              <div id="merchDesign">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_01.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_02.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_03.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_04.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_05.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_06.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/merchD_07.jpg" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">개인굿즈상품디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- //merchDesign -->
+              <div id="emoticon">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_01.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_02.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_03.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_04.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_05.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_06.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/emoticonD_07.JPG" alt="개인상품디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">이모티콘디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- //emoticon -->
+              <div id="nft">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_01.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_02.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_03.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_04.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_05.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_06.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/nftD_07.gif" alt="nft작품">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">nft작품제작</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div id="game">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_01.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_02.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_03.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_04.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_05.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_06.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">제페토아이템제작</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/gameD_07.jpg" alt="제페토아이템제작">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">구글플레이어플출시</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- //emoticon -->
+              <div id="accessories">
+                <ul class="design-box">
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD.png" alt="주얼리디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">주얼리디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD_01.png" alt="주얼리디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">주얼리디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD_02.png" alt="주얼리디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">주얼리디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD_03.jpg" alt="주얼리디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">주얼리디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD_04.jpg" alt="시계디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">시계디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="graphic_thumb">
+                    <a href="#" class="modal">
+                      <div class="img_box"><img src="img/accD_05.jpg" alt="시계디자인">
+                      </div>
+                      <p class="hover_txt">
+                        <span class="design_type">시계디자인</span>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div><!-- //emoticon -->
+
+            </div>
+          </div><!-- //tab_wrapper -->
+
         </section>
         <section class="section" id="contact">
           <h2>CONTACT</h2>
+          <h3>저에 대해서 더 궁금하신가요?</h3>
+          <div class="contact-main-ani">
+            <img class="an1-0" src="img/cloud_01.png" alt="구름1">
+            <img class="an1-1" src="img/cloud_02.png" alt="구름2">
+          </div>
+          <div class="contact-btn">
+            <div class="btn btn-stretch">
+              <div class="btn-icon">
+                <img src="img/footer_icon_01.png" alt="icon1">
+              </div>
+              <span class="btn-text">서울시 강동구 천호동</span>
+            </div>
+            <div class="btn btn-stretch">
+              <div class="btn-icon">
+                <img src="img/footer_icon_02.png" alt="icon2">
+              </div>
+              <span class="btn-text">010-4908-3987</span>
+            </div>
+            <div class="btn btn-stretch">
+              <div class="btn-icon">
+                <img src="img/footer_icon_03.png" alt="icon3">
+              </div>
+              <span class="btn-text">wanna20220423@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-box">
+            <img src="img/footer_bg_01.png" alt="신호등">
+          </div>
+          <footer>
+            <p class="copyright">
+              Copyright&copy; 2022. Kim chan mi. All rights reserved.
+            </p>
+            <a id="back-to-top" href="#header" class="visible"><span class="hidden">top</span></a>
+          </footer>
+
         </section>
       </div>
     </main>
-    <footer>
-      <p class="copyright">
-        Copyright&copy; 2022. Kim chan mi. All rights reserved.
-      </p>
-      <a id="back-to-top" href="#header" class="visible"><span class="hidden">top</span></a>
-    </footer>
-  </div>
+  </div><!-- //wrap -->
+
+
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
   <script src="js/custom-v.js"></script>
   <script src="js/bar.js"></script>
   <script src="js/mockup.js"></script>
   <script src="js/topbutton.js"></script>
+  <script src="js/popup.js"></script>
 </body>
 
 </html>
