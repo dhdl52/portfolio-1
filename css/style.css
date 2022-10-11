@@ -46,7 +46,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #header.sticky {
-  box-shadow: 0px 3px 8px rgb(30 52 125 / 20%);
+  box-shadow: 0 2px 0px rgb(78 102 183 / 26%);
   background: rgba(244, 249, 255, 0.8);
   backdrop-filter: blur(6.4px);
   transition: all 0.5s;
@@ -59,16 +59,15 @@ nav {
   height: 90px;
   width: 1280px;
   z-index: 2;
-  padding: 19px 0;
+  padding: 25px 0;
 }
 
 nav h1 {
   width: 75px;
   height: 75px;
-  /* background: url('../logo.svg') no-repeat left center / contain; */
   background: url("../logo.svg") no-repeat left center / contain;
   position: fixed;
-  margin: -10px 0;
+  margin: -20px 0;
 }
 
 nav h1 a {
@@ -101,6 +100,7 @@ nav .gnb li a {
   position: relative;
   width: 120px;
   height: 40px;
+  letter-spacing: 1.2px;
   font-weight: 600;
   font-family: "GmarketSansLight";
 }
@@ -168,10 +168,6 @@ section {
   transform: translate(4600%, 70%);
   z-index: 13;
 }
-
-/* .sideNav li {
-    position: relative;
-} */
 
 .sideNav li a {
   display: block;
@@ -246,7 +242,7 @@ section {
   transform: translateY(var(--y));
   transition: transform var(--duration) ease, box-shadow var(--duration) ease;
   -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   cursor: pointer;
 }
 
@@ -750,7 +746,7 @@ section {
 
 .frame .hidden {
   width: 677px;
-  height: 372px;
+  height: 377px;
   position: absolute;
   display: block;
   overflow: hidden;
@@ -839,7 +835,8 @@ section {
 
 .explain-box p,
 .explain-box li:nth-child(2),
-.explain-box li:nth-child(3) {
+.explain-box li:nth-child(3),
+.explain-box li:nth-child(4) {
   font-family: "GmarketSansMedium";
 
   font-style: normal;
@@ -1036,8 +1033,8 @@ iframe {
 }
 
 #portfolio .tab_menu span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.4em;
+  font-family: "GmarketSansMedium";
+  font-size: 1.6em;
 }
 
 /* #portfolio .tab_menu span:hover {
@@ -1051,12 +1048,12 @@ iframe {
 #portfolio .tab_menu li > a {
   padding: 0 20px;
   max-width: 210px;
-  height: 45px;
-  line-height: 45px;
+  height: 40px;
+  line-height: 50px;
   border-radius: 30px;
   background-color: transparent;
   text-align: center;
-  color: #555555;
+  color: #2c3d57;
   display: inline-block;
   margin: 0 1rem;
   transition: all 0.3s;
@@ -1064,17 +1061,54 @@ iframe {
 /* #portfolio .tab_menu li > a:hover {
   text-decoration: underline;
 } */
+#portfolio .tab_menu li span:hover {
+  color: #2256a3;
+}
+
 #portfolio .tab_menu li > a.active {
   transition: all 0.3s;
-  color: #122e57;
-  font-weight: bold;
+  color: #2256a3;
+}
+
+/* #portfolio .tab_menu li::after, */
+#portfolio .tab_menu li:hover::after {
+  transform: scaleX(1);
+}
+#portfolio .tab_menu li.on::after {
+  transform: scaleX(1);
+}
+
+#portfolio .tab_menu li::after {
+  /* position: absolute;
+  content: "";
+  left: 10%;
+  width: 5%;
+  height: 3px;
+  transform-origin: left;
+  background: #a9bde2;
+  transform: scalex(0);
+  transition: all 0.5s;
+  border-radius: 2px;
+  margin-top: 35px; */
+  position: relative;
+  content: "";
+  left: 0%;
+  width: 50%;
+  height: 3px;
+  transform-origin: left;
+  background: #a9bde2;
+  transform: scalex(0);
+  transition: all 0.5s;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  display: inline-block;
 }
 
 #portfolio ul.design-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  /* gap: 2rem; */
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  gap: 2rem;
   position: relative;
 }
 #portfolio ul.design-box .graphic_thumb {
@@ -1082,6 +1116,7 @@ iframe {
   height: 300px;
   overflow: hidden;
   position: relative;
+  border-radius: 15%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 #portfolio ul.design-box .graphic_thumb a {
@@ -1143,7 +1178,49 @@ iframe {
   transform: scale(1.2);
   transition: all 0.3s;
 }
-
+/* 모달창 */
+#portfolio #pf_modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 2121;
+}
+#portfolio #pf_modal .modal_container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 90%;
+  background-color: #ffffff;
+}
+#portfolio #pf_modal .modal_container .top {
+  height: 50px;
+}
+#portfolio #pf_modal .modal_box {
+  position: relative;
+  height: calc(100% - 50px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#portfolio #pf_modal .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #999;
+  background: transparent;
+  cursor: pointer;
+}
 /* contact */
 #contact {
   margin-bottom: 0;
@@ -1155,15 +1232,42 @@ iframe {
 
 #contact::after {
   content: "";
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  border-radius: 100% 100% 0 0;
   width: 100%;
   height: 350px;
   background: url("../img/nonstop.png") no-repeat center/100%;
+  z-index: -100; */
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 350px;
+  background: #e2eeff;
+  border-radius: 50% 50% 0 0;
   z-index: -100;
 }
 
+.copyright::before {
+  content: "";
+  background: url("../img/footer_img.png") no-repeat center;
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  left: 10px;
+  top: -311px;
+  z-index: 117;
+}
+.copyright::after {
+  content: "NONSTOP";
+  font-size: 1.8em;
+  color: #8db0e5;
+  width: 100%;
+  height: 50px;
+  letter-spacing: 18px;
+  position: absolute;
+  left: 12px;
+  top: -234px;
+}
 .contact-main-ani {
   position: relative;
   top: 0;
@@ -1191,10 +1295,17 @@ iframe {
 }
 
 .contact-btn {
-  display: block;
+  /* display: block;
   width: 100px;
   position: absolute;
   left: 48%;
+  z-index: 10;
+  margin-top: 55px; */
+  display: block;
+  width: 100px;
+  position: absolute;
+  /* left: 0; */
+  transform: translateX(575px);
   z-index: 10;
   margin-top: 55px;
 }
@@ -1239,16 +1350,18 @@ iframe {
   position: absolute;
   height: 70px;
   line-height: 70px;
-  color: #2256a3;
   font-size: 2em;
   font-family: "GmarketSansMedium";
   width: 200px;
-  left: 80px;
+  left: 90px;
   top: -10px;
   opacity: 0;
   transition: all 0.5s 0.15s;
 }
-
+.btn-text,
+.btn-text a {
+  color: #2256a3;
+}
 .btn-stretch:hover {
   width: 500px;
 }

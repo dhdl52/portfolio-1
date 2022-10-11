@@ -14,3 +14,42 @@ targetLink.each(function (i, e) {
   });
 });
 tabContent.eq(0).show();
+
+// 호버고정
+
+$(".tab_menu li").click(function () {
+  $(this).addClass("on").siblings().removeClass("on");
+});
+
+//모달창
+var modal = $("#pf_modal"),
+  modalThumb = $(".graphic_thumb .modal"),
+  modalClose = modal.find(".close"),
+  modalImg = modal.find("img");
+
+modalThumb.each(function () {
+  $(this).click(function (e) {
+    e.preventDefault();
+
+    var showFull = $(this).find("img").attr("data-src");
+    open(modal);
+    modalImg.attr("src", showFull);
+  });
+});
+
+modalClose.click(function (e) {
+  e.preventDefault();
+  close(modal);
+});
+
+modal.click(function () {
+  close(modal);
+});
+
+function open(el) {
+  el.removeClass("hidden");
+}
+
+function close(el) {
+  el.addClass("hidden");
+}
