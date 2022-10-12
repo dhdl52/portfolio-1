@@ -1153,6 +1153,7 @@ iframe {
 }
 #portfolio ul.design-box .graphic_thumb .hover_txt .design_type {
   display: block;
+  width: 280px;
   font-size: 2em;
   font-family: "GmarketSansTTFBold";
   color: #122e57;
@@ -1177,6 +1178,9 @@ iframe {
 #portfolio ul.design-box .graphic_thumb:hover img {
   transform: scale(1.2);
   transition: all 0.3s;
+}
+#portfolio ul.design-box .graphic_thumb .hover_txt .more_icon img {
+  animation: moreicon 1.5s infinite ease-in-out;
 }
 /* 모달창 */
 #portfolio #pf_modal {

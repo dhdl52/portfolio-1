@@ -46,10 +46,10 @@ modal.click(function () {
   close(modal);
 });
 
-function open(el) {
-  el.removeClass("hidden");
-}
+// function open(el) {
+//   el.removeClass("hidden");
+// }
 
-function close(el) {
-  el.addClass("hidden");
-}
+// function close(el) {
+//   el.addClass("hidden");
+// }
