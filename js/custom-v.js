@@ -136,3 +136,28 @@ document
 //   }
 //   timeout = setTimeout(mouseStopped, 1000);
 // });
+
+/* typed */
+// var typed = new Typed('.typing', {
+//   strings: ['You Tuber'],
+//   typeSpeed:500,
+//   // backSpedd:10,
+//   loop:true
+//   });
+
+
+$(document).ready(function() {
+	var content = $('#title').text().split('');
+$('#title').html('');
+	function myTimer() {		if(content[i]){
+		console.log(content);
+		var cur = $("#title").html();
+$('#title').html(cur+content[i]);
+		i++;
+	} else {
+		i=0;		$('#title').html('');
+	}
+	}
+	var i = 0;
+	var inter= setInterval(myTimer,200);
+});

@@ -16,3 +16,16 @@ btt.addEventListener("click", function (e) {
 
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+// 이미지 클릭시 아래로
+$(function() {
+  $('.scroll-down').click (function() {
+    $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+    return false;
+  });
+});
+
+
+
