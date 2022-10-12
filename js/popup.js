@@ -32,7 +32,7 @@ modalThumb.each(function () {
     e.preventDefault();
 
     var showFull = $(this).find("img").attr("data-src");
-    open(modal);
+    onclick(modal);
     modalImg.attr("src", showFull);
   });
 });
@@ -46,10 +46,10 @@ modal.click(function () {
   close(modal);
 });
 
-// function open(el) {
-//   el.removeClass("hidden");
-// }
+function onclick(el) {
+  el.removeClass("hidden");
+}
 
-// function close(el) {
-//   el.addClass("hidden");
-// }
+function close(el) {
+  el.addClass("hidden");
+}

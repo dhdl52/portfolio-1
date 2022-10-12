@@ -149,14 +149,20 @@ nav .gnb li a:hover:after {
 #project3,
 #project4,
 #project5,
+#project6,
 #contact {
   /* height: 95vh; */
-  padding: 7rem 0 0;
+  padding: 14rem 0 0;
   margin-bottom: 450px;
 }
 
+#portfolio {
+  padding-top: 1px;
+}
+
+
 section {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   /* line-height: 100vh; */
   text-align: center;
   /* margin: 40vw auto; */
@@ -723,7 +729,7 @@ section {
 }
 
 .project-title {
-  margin-top: 180px;
+  margin-top: 5px;  
   margin-bottom: 171px;
 }
 
@@ -906,8 +912,8 @@ section {
   background: url(../img/projects6.png) no-repeat;
   width: 839px;
   height: 785px;
-  transform: translate(-110%);
-  top: 7230px;
+  transform: translate(-108%);
+  top: 9152px;
 }
 
 .pj-text {
@@ -968,11 +974,16 @@ iframe {
 }
 
 /* portfolio */
-#portfolio h2,
-#contact h2 {
+#portfolio h2 {
   text-align: left;
-  margin-top: 320px;
+  margin-top: 220px;
 }
+
+#contact h2 {
+  margin-top: -3px;
+  text-align: left;
+}
+  
 
 /* top버튼 */
 #back-to-top.visible {
@@ -1225,9 +1236,12 @@ iframe {
   background: transparent;
   cursor: pointer;
 }
+
+
 /* contact */
 #contact {
   margin-bottom: 0;
+  min-height: 0;
 }
 #contact h3 {
   color: #2256a3;
