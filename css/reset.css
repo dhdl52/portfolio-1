@@ -46,7 +46,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* cursor: none; */
+  cursor: url('../img/cursor.png'), auto;
 }
 
 /* anchor */

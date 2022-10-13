@@ -122,42 +122,33 @@ document
   );
 
 //마우스커서;
-// const cursor = document.querySelector(".cursor");
+
+// const circle = document.querySelector(".cusor");
+
 // document.addEventListener("mousemove", (e) => {
-//   let x = e.pageX;
-//   let y = e.pageY;
+//   const mouseX = e.clientX;
+//   const mouseY = e.clientY;
 
-//   cursor.style.top = y + "px";
-//   cursor.style.left = x + "px";
-//   cursor.style.display = "block";
-
-//   function mouseStopped() {
-//     cursor.style.display = "none";
-//   }
-//   timeout = setTimeout(mouseStopped, 1000);
+//   circle.style.left = mouseX + "px";
+//   circle.style.top = mouseY + "px";
 // });
 
 /* typed */
-// var typed = new Typed('.typing', {
-//   strings: ['You Tuber'],
-//   typeSpeed:500,
-//   // backSpedd:10,
-//   loop:true
-//   });
 
-
-$(document).ready(function() {
-	var content = $('#title').text().split('');
-$('#title').html('');
-	function myTimer() {		if(content[i]){
-		console.log(content);
-		var cur = $("#title").html();
-$('#title').html(cur+content[i]);
-		i++;
-	} else {
-		i=0;		$('#title').html('');
-	}
-	}
-	var i = 0;
-	var inter= setInterval(myTimer,200);
+$(document).ready(function () {
+  var content = $("#title").text().split("");
+  $("#title").html("");
+  function myTimer() {
+    if (content[i]) {
+      console.log(content);
+      var cur = $("#title").html();
+      $("#title").html(cur + content[i]);
+      i++;
+    } else {
+      i = 0;
+      $("#title").html("");
+    }
+  }
+  var i = 0;
+  var inter = setInterval(myTimer, 200);
 });
