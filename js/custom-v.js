@@ -121,17 +121,6 @@ document
         "</span></div>")
   );
 
-//마우스커서;
-
-// const circle = document.querySelector(".cusor");
-
-// document.addEventListener("mousemove", (e) => {
-//   const mouseX = e.clientX;
-//   const mouseY = e.clientY;
-
-//   circle.style.left = mouseX + "px";
-//   circle.style.top = mouseY + "px";
-// });
 
 /* typed */
 
