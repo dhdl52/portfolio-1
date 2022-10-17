@@ -1420,3 +1420,28 @@ iframe {
   margin-top: 300px;
   left: 865px;
 }
+
+
+/* media */
+@media (min-width: 1024px) {
+  #about::before {
+    bottom: -200px;
+    left: 0;
+    z-index: 12;
+  }  
+  #about::after{
+    bottom: -106px;
+  }
+  .main-visual img {
+    width: 27%;
+    z-index: 1;
+}
+.sideNav {
+  transform: translate(4031%, 70%);
+}
+#project6::before {
+  top: 8281px;
+  z-index: -100000;
+}
+
+}
