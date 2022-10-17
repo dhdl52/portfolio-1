@@ -25,33 +25,33 @@ $(window).scroll(function () {
   var sections = [
     {
       section: $("#project1").offset().top,
-      left: $("section .p1_left"),
-      right: $("section .p1_right"),
+      left: $("section .p1-left"),
+      right: $("section .p1-right"),
     },
     {
       section: $("#project2").offset().top,
-      left: $("section .p2_left"),
-      right: $("section .p2_right"),
+      left: $("section .p2-left"),
+      right: $("section .p2-right"),
     },
     {
       section: $("#project3").offset().top,
-      left: $("section .p3_left"),
-      right: $("section .p3_right"),
+      left: $("section .p3-left"),
+      right: $("section .p3-right"),
     },
     {
       section: $("#project4").offset().top,
-      left: $("section .p4_left"),
-      right: $("section .p4_right"),
+      left: $("section .p4-left"),
+      right: $("section .p4-right"),
     },
     {
       section: $("#project5").offset().top,
-      left: $("section .p5_left"),
-      right: $("section .p5_right"),
+      left: $("section .p5-left"),
+      right: $("section .p5-right"),
     },
     {
       section: $("#project6").offset().top,
-      left: $("section .p6_left"),
-      right: $("section .p6_right"),
+      left: $("section .p6-left"),
+      right: $("section .p6-right"),
     },
   ];
 

@@ -66,7 +66,7 @@ nav {
 nav h1 {
   width: 75px;
   height: 75px;
-  background: url("../logo.svg") no-repeat left center / contain;
+  background: url("../img/logo.svg") no-repeat left center / contain;
   position: fixed;
   margin: -20px 0;
 }
@@ -1038,7 +1038,7 @@ iframe {
   font-family: "GmarketSansLight";
   margin-top: 15px;
 }
-#portfolio .tab_menu {
+#portfolio .tab-menu {
   display: flex;
   justify-content: space-around;
   margin: 4rem auto;
@@ -1049,20 +1049,15 @@ iframe {
   background: #ffffff;
 }
 
-#portfolio .tab_menu span {
+#portfolio .tab-menu span {
   font-family: "GmarketSansMedium";
   font-size: 1.6em;
 }
 
-/* #portfolio .tab_menu span:hover {
-  color: #122e57;
-  font-weight: bold;
-} */
-
-#portfolio #tab_content > div {
+#portfolio #tab-content > div {
   display: none;
 }
-#portfolio .tab_menu li > a {
+#portfolio .tab-menu li > a {
   padding: 0 20px;
   max-width: 210px;
   height: 40px;
@@ -1075,27 +1070,27 @@ iframe {
   margin: 0 1rem;
   transition: all 0.3s;
 }
-/* #portfolio .tab_menu li > a:hover {
+/* #portfolio .tab-menu li > a:hover {
   text-decoration: underline;
 } */
-#portfolio .tab_menu li span:hover {
+#portfolio .tab-menu li span:hover {
   color: #2256a3;
 }
 
-#portfolio .tab_menu li > a.active {
+#portfolio .tab-menu li > a.active {
   transition: all 0.3s;
   color: #2256a3;
 }
 
-/* #portfolio .tab_menu li::after, */
-#portfolio .tab_menu li:hover::after {
+/* #portfolio .tab-menu li::after, */
+#portfolio .tab-menu li:hover::after {
   transform: scaleX(1);
 }
-#portfolio .tab_menu li.on::after {
+#portfolio .tab-menu li.on::after {
   transform: scaleX(1);
 }
 
-#portfolio .tab_menu li::after {
+#portfolio .tab-menu li::after {
   /* position: absolute;
   content: "";
   left: 10%;
@@ -1128,7 +1123,7 @@ iframe {
   gap: 2rem;
   position: relative;
 }
-#portfolio ul.design-box .graphic_thumb {
+#portfolio ul.design-box .graphic-thumb {
   width: 300px;
   height: 300px;
   overflow: hidden;
@@ -1136,12 +1131,12 @@ iframe {
   border-radius: 15%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
-#portfolio ul.design-box .graphic_thumb a {
+#portfolio ul.design-box .graphic-thumb a {
   width: 100%;
   height: 100%;
   display: block;
 }
-#portfolio ul.design-box .graphic_thumb .img_box {
+#portfolio ul.design-box .graphic-thumb .img_box {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -1149,12 +1144,12 @@ iframe {
   display: flex;
   justify-content: center;
 }
-#portfolio ul.design-box .graphic_thumb img {
+#portfolio ul.design-box .graphic-thumb img {
   height: 300px;
   transition: all 0.3s;
 }
 
-#portfolio ul.design-box .graphic_thumb .hover_txt {
+#portfolio ul.design-box .graphic-thumb .hover-txt {
   position: absolute;
   top: 0;
   width: 300px;
@@ -1168,39 +1163,39 @@ iframe {
   opacity: 0;
   transition: all 0.3s;
 }
-#portfolio ul.design-box .graphic_thumb .hover_txt .design_type {
+#portfolio ul.design-box .graphic-thumb .hover-txt .design-type {
   display: block;
   width: 280px;
   font-size: 2em;
   font-family: "GmarketSansTTFBold";
   color: #122e57;
 }
-#portfolio ul.design-box .graphic_thumb .hover_txt .design_type::before {
+#portfolio ul.design-box .graphic-thumb .hover-txt .design-type::before {
   content: "";
   width: 50px;
   height: 3px;
   display: block;
   margin: 0 auto;
 }
-#portfolio ul.design-box .graphic_thumb .hover_txt img {
+#portfolio ul.design-box .graphic-thumb .hover-txt img {
   width: 50px;
   height: auto;
 }
 
-#portfolio ul.design-box .graphic_thumb:hover .hover_txt {
+#portfolio ul.design-box .graphic-thumb:hover .hover-txt {
   opacity: 1;
   transition: all 0.3s;
   transition-delay: 0.3s;
 }
-#portfolio ul.design-box .graphic_thumb:hover img {
+#portfolio ul.design-box .graphic-thumb:hover img {
   transform: scale(1.2);
   transition: all 0.3s;
 }
-#portfolio ul.design-box .graphic_thumb .hover_txt .more_icon img {
+#portfolio ul.design-box .graphic-thumb .hover-txt .more-icon img {
   animation: moreicon 1.5s infinite ease-in-out;
 }
 /* 모달창 */
-#portfolio #pf_modal {
+#portfolio #pf-modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1211,7 +1206,7 @@ iframe {
   height: 100%;
   z-index: 2121;
 }
-#portfolio #pf_modal .modal_container {
+#portfolio #pf-modal .modal-container {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1220,16 +1215,16 @@ iframe {
   height: 90%;
   background-color: #ffffff;
 }
-#portfolio #pf_modal .modal_container .top {
+#portfolio #pf-modal .modal-container .top {
   height: 50px;
 }
-#portfolio #pf_modal .modal_box {
+#portfolio #pf-modal .modal_box {
   position: relative;
   height: calc(100% - 50px);
   overflow-y: scroll;
   overflow-x: hidden;
 }
-#portfolio #pf_modal .close {
+#portfolio #pf-modal .close {
   position: absolute;
   top: 0;
   right: 0;
