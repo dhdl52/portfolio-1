@@ -1423,7 +1423,7 @@ iframe {
 
 
 /* media */
-@media (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #about::before {
     bottom: -200px;
     left: 0;
