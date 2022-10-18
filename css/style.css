@@ -533,6 +533,7 @@ section {
   position: absolute;
   text-align: left;
   line-height: 1.6;
+  z-index:1000;
 }
 
 .about-info h3 em {
