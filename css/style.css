@@ -492,7 +492,7 @@ section {
   border-radius: 100% 100% 0 0;
   position: absolute;
   background: #fff;
-  bottom: -10%;  
+  bottom: -10%;
   left: 0;
   z-index: 11;
 }
@@ -533,7 +533,7 @@ section {
   position: absolute;
   text-align: left;
   line-height: 1.6;
-  z-index:1000;
+  z-index: 1000;
 }
 
 .about-info h3 em {
@@ -576,22 +576,6 @@ section {
   text-align: left;
   margin-bottom: 16px;
 }
-
-/* .about-box .title li {
-    color: #090A0C;
-    margin-right: 60px;
-    line-height: 2.6;
-    font-size: 1.4em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.list li {
-  font-family: 'GmarketSansMedium';
-
-    font-size: 1.4em;
-    color: #555A64;
-    line-height: 2.6;
-} */
 
 .introduce,
 .licenses,
@@ -1241,7 +1225,7 @@ iframe {
   color: #2c3d57;
 }
 #title::after {
-	content: "|";
+  content: "|";
 }
 
 #contact::after {
@@ -1398,31 +1382,90 @@ iframe {
   left: 865px;
 }
 
-
 /* MEDIA QUERY */
 /* 랩탑 */
-@media screen and (max-width: 1024px) and (max-width: 1600px){
+@media screen and (max-width: 1024px) and (max-width: 1600px) {
+  nav .gnb {
+    margin-left: 15%;
+  }
+  #about img {
+    width: 300px;
+  }
+  .about-info h3 {
+    font-size: 2.5em;
+  }
+  .about-box {
+    column-gap: 5.2rem;
+  }
+
+  .title-left {
+    left: -385px;
+  }
+  #project1,
+  #project2,
+  #project3,
+  #project4,
+  #project5,
+  #project6,
+  #contact {
+    margin-bottom: 0;
+  }
   #about::before {
     bottom: -200px;
     left: 0;
     z-index: 12;
-  }  
-  #about::after{
+  }
+  #about::after {
     bottom: -106px;
   }
   .main-visual img {
     width: 35%;
     z-index: 1;
-}
-.sideNav {
-  transform: translate(4031%, 70%);
-}
-#project6::before {
-  top: 8281px;
-  z-index: -100000;
-}
+  }
+  .sideNav {
+    transform: translate(3010%, 70%);
+  }
+  .infos {
+    width: 25%;
+  }
+  .infos-name {
+    margin-bottom: 0;
+  }
+  .infos-name em {
+    margin-left: 5px;
+    font-size: 1.6rem;
+  }
+  .explain-box {
+    margin: 43px 0;
+  }
+  .title-box span::before,
+  .title-box span::after {
+    top: 77px;
+  }
+  .btn-box {
+    display: inline-block;
+  }
+  .button {
+    width: 101px;
+    height: 35px;
+  }
+
+
+  #project6::before {
+    display: none;
+  }
+
+  .contact-btn {
+    transform: translateX(442px);
+  }
+  .copyright::before {
+    width: 80%;
+    left: 104px;
+  }
+  .footer-area {
+    left: 450px;
+  }
 }
 /* 모바일 */
-@media screen and (min-width: 360px) and (max-width: 1023px){
-  
+@media screen and (min-width: 360px) and (max-width: 1023px) {
 }
