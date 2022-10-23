@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb {
   backdrop-filter: blur(6.4px);
   transition: all 0.5s;
   position: fixed;
-  z-index: 222;
+  z-index: 1222;
 }
 
 /* nav */
@@ -1467,4 +1467,20 @@ iframe {
 }
 /* 모바일 */
 @media screen and (min-width: 360px) and (max-width: 1023px) {
+  nav h1 {
+    width: 40px;
+  }
+  nav .gnb {
+    display: none;
+  }
+  .sideNav {
+    transform: translate(4500%,50%);
+  }
+  .sideNav li.on a {
+    width: 18px;
+    height: 100%;
+  }
+  .an1-0,.an1-1,.an1-2{
+    width: 100px;
+  }
 }
