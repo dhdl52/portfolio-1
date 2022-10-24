@@ -171,7 +171,7 @@ section {
 /* sideNav */
 .sideNav {
   position: fixed;
-  transform: translate(4650%, 70%);
+  transform: translate(4250%, 70%);
   z-index: 13;
 }
 
