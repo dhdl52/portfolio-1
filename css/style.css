@@ -138,12 +138,6 @@ nav .gnb li a:hover:after {
   transform: scaleX(1);
 }
 
-/* nav .gnb li.on a:before,
-nav .gnb li a:hover:before,
-nav .gnb li.on a:after,
-nav .gnb li a:hover:after {
-    transform: scaleX(1);
-} */
 
 #project1,
 #project2,
@@ -1180,6 +1174,7 @@ iframe {
 }
 #portfolio #pf-modal .modal-container .top {
   height: 50px;
+  background: #4784e0;
 }
 #portfolio #pf-modal .modal_box {
   position: relative;
@@ -1196,7 +1191,7 @@ iframe {
   border: none;
   font-size: 2rem;
   font-weight: 300;
-  color: #999;
+  color: #fff;
   background: transparent;
   cursor: pointer;
 }
