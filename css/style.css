@@ -190,17 +190,6 @@ section {
   background-color: rgb(179, 203, 238);
 }
 
-/* .sideNav li.on a::before {
-    content: '';
-    background: url('../img/sideOn.png') no-repeat 0px 0px;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: -30%;
-    top: 5%;
-} */
-
 .sideNav li.on a {
   width: 30px;
   height: 36px;
@@ -811,6 +800,7 @@ section {
 .title-box span::after {
   top: 360px;
   left: 0;
+  margin-top: 2rem;
 }
 
 .infos-name {
@@ -835,7 +825,6 @@ section {
 .explain-box li:nth-child(3),
 .explain-box li:nth-child(4) {
   font-family: "GmarketSansMedium";
-
   font-style: normal;
   font-weight: 400;
   font-size: 1.5em;
@@ -1384,7 +1373,7 @@ iframe {
 
 /* MEDIA QUERY */
 /* 랩탑 */
-@media screen and (max-width: 1024px) and (max-width: 1600px) {
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
   nav .gnb {
     margin-left: 15%;
   }
@@ -1423,7 +1412,7 @@ iframe {
     z-index: 1;
   }
   .sideNav {
-    transform: translate(3010%, 70%);
+    transform: translateX(3010%, 70%);
   }
   .infos {
     width: 25%;
@@ -1465,8 +1454,8 @@ iframe {
     left: 450px;
   }
 }
-/* 모바일 */
-@media screen and (min-width: 360px) and (max-width: 1023px) {
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   nav h1 {
     width: 40px;
   }
@@ -1474,7 +1463,7 @@ iframe {
     display: none;
   }
   .sideNav {
-    transform: translate(4500%,50%);
+    transform: translateX(4500%,50%);
   }
   .sideNav li.on a {
     width: 18px;
@@ -1483,4 +1472,9 @@ iframe {
   .an1-0,.an1-1,.an1-2{
     width: 100px;
   }
+ 
+}
+/* 모바일 360px */
+@media screen and (min-width: 360px) and (max-width:767px){
+
 }
